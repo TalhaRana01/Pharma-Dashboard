@@ -1,6 +1,5 @@
-import pandas as pd
+import pandas as pd 
 import streamlit as st 
-
 # st.header("Dashboard")
 # # Load data from data folder
 # def load_data():
