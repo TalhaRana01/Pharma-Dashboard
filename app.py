@@ -1,5 +1,6 @@
 import pandas as pd 
 import streamlit as st 
+# import plotly.express as px
 # st.header("Dashboard")
 # # Load data from data folder
 # def load_data():
@@ -193,18 +194,18 @@ def load_data():
     return (sales, products, inventory, suppliers)
 
 # -------------------------------------------------------
-# 2. Stream Page Config
+#  1️⃣ Streamlit Page Configuration
 # -------------------------------------------------------
 st.set_page_config(
-    page_title="Pharma Sales Dashboard",
-    page_icon="⚙️",
+    page_title=" Pharma Sales Dashboard",
+    page_icon="💊",
     layout="wide"
 )
-st.title("⚙️ Pharma Retail Sales & Imventory Intelligence Dashboard")
-st.markdown("Analyze sales performance, Inventory levels, and suppliers info in retail pharamcy chians")
+st.title("💊 Pharma Retail Sales & Imventory Intelligence Dashboard")
+st.markdown("**Analyze sales performance, Inventory levels, and suppliers info in retail pharamcy chians**")
 
 # -------------------------------------------------------
-# 1. Data Ingestion (Reading Multiple CSVs)
+#  2️⃣ Data Ingestion (Reading Multiple CSVs)
 # -------------------------------------------------------
 
 sales, products, inventory, suppliers = load_data()
@@ -216,7 +217,7 @@ sales, products, inventory, suppliers = load_data()
 # print(suppliers.head())
 
 # -------------------------------------------------------
-# 1. Data Cleaning & Preparation
+# 3️⃣ Data Cleaning & Preparation
 # -------------------------------------------------------
 
 # standardizing column names
